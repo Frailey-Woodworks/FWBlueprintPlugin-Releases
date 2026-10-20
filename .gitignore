@@ -1,0 +1,9 @@
+*.cs
+*.csproj
+*.sln
+*.pdb
+*.3dm
+*.xml
+client_secret*
+*private-key*
+*signing-key*

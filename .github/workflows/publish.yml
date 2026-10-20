@@ -1,0 +1,20 @@
+name: Publish verified binary releases
+on:
+  push:
+    branches: [main]
+    paths: ['releases/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: blueprint-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and publish immutable signed packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/publish.py
