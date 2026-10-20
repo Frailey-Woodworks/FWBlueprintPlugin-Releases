@@ -10,4 +10,6 @@ Packages and release metadata are signed. This repository contains distribution 
 
 Final version 1.80.2 passed anonymous signed-download and failure checks. In actual Work Rhino, Check now staged the newer release while the old version kept running; a normal blank-session restart loaded 1.80.2 before any Blueprint command. All update controls were visually checked. Automatic startup checking was separately observed; its normal cooldown was preserved. Native rollback and client-model workflow regression were outside this update check. See each release's notes for current limits.
 
-[Download version 1.80.2](https://github.com/Frailey-Woodworks/FWBlueprintPlugin-Releases/releases/download/v1.80.2/FWBlueprintPlugin-1.80.2-win-x64.zip)
+Current version 1.80.3 increases the lumber stock allowance to 50% contingency, retaining upward rounding to 5 board feet. Both runtime calculations and the published package signature/hashes were checked. Existing drawing notes are preserved.
+
+[Download the latest release](https://github.com/Frailey-Woodworks/FWBlueprintPlugin-Releases/releases/latest)
