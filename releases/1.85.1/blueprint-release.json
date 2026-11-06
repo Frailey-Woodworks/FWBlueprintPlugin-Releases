@@ -1,0 +1,10 @@
+{
+  "Format": 1,
+  "Product": "FWBlueprintPlugin",
+  "PluginId": "bcb8bf5e-b4ee-45f9-a3ea-bc54de4a7248",
+  "Version": "1.85.1",
+  "Commit": "121003bd13ed21664beefe27be16c9020764078a",
+  "Package": "https://github.com/Frailey-Woodworks/FWBlueprintPlugin-Releases/releases/download/v1.85.1/FWBlueprintPlugin-1.85.1-win-x64.zip",
+  "Sha256": "0b33f3cd96dd8f639d19c03c3752f2e22daf03bbb187ab6fde05d2f75a357b2a",
+  "Bytes": 6675632
+}
