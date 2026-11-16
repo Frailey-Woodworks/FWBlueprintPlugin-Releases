@@ -1,0 +1,21 @@
+name: Publish explicitly selected development release
+on:
+  push:
+    branches: [main]
+    paths: ['development/**']
+permissions:
+  contents: write
+concurrency:
+  group: blueprint-development-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Verify signed bundle and publish prerelease only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/publish-development.py
