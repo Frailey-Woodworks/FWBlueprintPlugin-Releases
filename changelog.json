@@ -279,6 +279,15 @@
     "Top, back and bottom panels always share sheet 1, even on long consoles (Robin, Cortney) where their dimension text then prints smaller."
    ],
    "dimensions": true
+  },
+  "1.88.34": {
+   "title": "CNC page format",
+   "changes": [
+    "Perm shelf CNC page follows your mock-up: solid outline, a small \"front edge\" label, and the CNC file / Place perm shelf in the cnc like so / File name / Bit size note.",
+    "A red dot marks XY 0 on every CNC layout; the +X, +Y and XY 0,0 labels are gone.",
+    "Renaming a CNC file name keeps it red."
+   ],
+   "dimensions": false
   }
  }
 }
