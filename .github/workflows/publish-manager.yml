@@ -1,0 +1,21 @@
+name: Publish FW Version Manager
+on:
+  push:
+    branches: [main]
+    paths: ['manager/**']
+permissions:
+  contents: write
+concurrency:
+  group: fw-version-manager-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Verify signed bundle and publish prerelease only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/publish-manager.py
