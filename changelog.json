@@ -296,6 +296,15 @@
     "Fixed: on frame-door and leg CNC pages the red XY 0 dot sat next to the notes; it now marks the lower-left corner of the layout."
    ],
    "dimensions": false
+  },
+  "1.88.36": {
+   "title": "Small dims at 10",
+   "changes": [
+    "Small dimensions use Model space scale 10 instead of 8.",
+    "The back panel's cord slot/hole chain uses the small size too, like the shelf cord chains.",
+    "A part that fails to reach the drawings is listed as INCORRECT; the rest of the blueprint is still made."
+   ],
+   "dimensions": true
   }
  }
 }
