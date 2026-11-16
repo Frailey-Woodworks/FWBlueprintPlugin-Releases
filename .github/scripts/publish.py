@@ -18,9 +18,22 @@ for folder in sorted((root/'releases').iterdir(),key=lambda p:tuple(map(int,p.na
             assert name in ('README.txt','THIRD-PARTY-NOTICES.txt','manifest.yml') or re.fullmatch(r'net(?:48|7\.0)/[A-Za-z0-9_.-]+(?:\.dll|\.rhp|\.deps\.json|\.runtimeconfig\.json)',name)
             assert not name.lower().endswith(('.pdb','.cs','.xml'))
             assert hashlib.sha256(archive.read(name)).hexdigest()==digest
-    result=subprocess.run(['gh','release','view',tag,'--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--json','assets'],capture_output=True,text=True)
+    result=subprocess.run(['gh','release','view',tag,'--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--json','assets,isPrerelease'],capture_output=True,text=True)
     if result.returncode==0:
-        assert {a['name'] for a in json.loads(result.stdout)['assets']}=={package.name,manifest.name,signature.name},'Existing release differs; never overwrite'
+        existing=json.loads(result.stdout)
+        assert {a['name'] for a in existing['assets']}=={package.name,manifest.name,signature.name},'Existing release differs; never overwrite'
+        if existing.get('isPrerelease'):
+            # Owner sign-off promotes an already-published development build to stable. The signed
+            # assets are byte-identical (their digests were just re-verified above); only the
+            # release channel changes. It becomes Latest when it is newer than the current Latest.
+            for asset in (package,manifest,signature):
+                download=subprocess.run(['gh','release','download',tag,'--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--pattern',asset.name,'--output','-'],capture_output=True,check=True).stdout
+                assert hashlib.sha256(download).digest()==hashlib.sha256(asset.read_bytes()).digest(),'Published asset differs from the promoted folder'
+            latest=subprocess.run(['gh','release','view','--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--json','tagName'],capture_output=True,text=True)
+            newer=True
+            if latest.returncode==0:
+                newer=tuple(map(int,version.split('.')))>tuple(map(int,json.loads(latest.stdout)['tagName'].removeprefix('v').split('.')))
+            subprocess.run(['gh','release','edit',tag,'--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--prerelease=false','--title','Blueprint '+version,'--latest='+str(newer).lower()],check=True)
         continue
     latest=subprocess.run(['gh','release','view','--repo','Frailey-Woodworks/FWBlueprintPlugin-Releases','--json','tagName'],capture_output=True,text=True)
     mark_latest=True
