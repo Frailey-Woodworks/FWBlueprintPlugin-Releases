@@ -1,0 +1,10 @@
+{
+  "Format": 1,
+  "Product": "FWVersionManager",
+  "PluginId": "78de38af-c927-4bd0-a206-31e1b37a3d76",
+  "Version": "1.1.0",
+  "Commit": "c912318a30c297b5aa02b5cf923a6c849a8cf20e",
+  "Package": "https://github.com/Frailey-Woodworks/FWBlueprintPlugin-Releases/releases/download/manager-v1.1.0/fw-version-manager-1.1.0-win-x64.zip",
+  "Sha256": "71c69e629f7eeedac7b4410440fd36b75aa61e75e22aa13d4d8669a85541f8d7",
+  "Bytes": 71020
+}

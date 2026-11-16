@@ -1,0 +1,7 @@
+{
+  "version": "1.1.0",
+  "title": "FW Version Manager 1.1.0",
+  "commit": "c912318a30c297b5aa02b5cf923a6c849a8cf20e",
+  "prerelease": true,
+  "make_latest": "false"
+}
