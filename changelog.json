@@ -1,0 +1,239 @@
+{
+ "schema": 1,
+ "versions": {
+  "1.88.1": {
+   "title": null,
+   "changes": [
+    "Restored the square through-post leg-cap drawing (from Jennifer's).",
+    "Removed the a/b/c part lettering.",
+    "Build-page titles now match the dimension text style."
+   ],
+   "dimensions": false
+  },
+  "1.88.2": {
+   "title": null,
+   "changes": [
+    "Crosby legs: the U-frame is drawn once, assembled, with the cross rails drawn separately.",
+    "Fixed the stretcher orientation.",
+    "Added the Belvedere one-board leg CNC layout."
+   ],
+   "dimensions": false
+  },
+  "1.88.3": {
+   "title": null,
+   "changes": [
+    "Exterior walls are laid flat as mirror images: the left wall turns clockwise and the right wall counter-clockwise, with their tops meeting in the middle."
+   ],
+   "dimensions": false
+  },
+  "1.88.4": {
+   "title": null,
+   "changes": [
+    "Built-up walls are captioned \"Ext Walls (Inside Panel)\".",
+    "Wall dimensions are tied to the drawn wall instead of the original model position."
+   ],
+   "dimensions": true
+  },
+  "1.88.5": {
+   "title": null,
+   "changes": [
+    "Fixed ConsoleAuto failing silently on capped-wall consoles (Scott, Jennifer) and the placement of their wall dimensions."
+   ],
+   "dimensions": true
+  },
+  "1.88.6": {
+   "title": null,
+   "changes": [
+    "Fixed the wall-flattening step, which failed in real Rhino on every console (my fix)."
+   ],
+   "dimensions": false
+  },
+  "1.88.7": {
+   "title": null,
+   "changes": [
+    "The Belvedere CNC note no longer wraps onto the blank's dimension line."
+   ],
+   "dimensions": false
+  },
+  "1.88.8": {
+   "title": null,
+   "changes": [
+    "CNC instructions go below the layout, or to the right when below doesn't fit.",
+    "Applied your wall and U-frame review rules."
+   ],
+   "dimensions": false
+  },
+  "1.88.9": {
+   "title": null,
+   "changes": [
+    "Cord-hole location dimensions moved inside the panel instead of outside it.",
+    "The fine dashed-line style was unified across sheets."
+   ],
+   "dimensions": true
+  },
+  "1.88.10": {
+   "title": null,
+   "changes": [
+    "Restored the manual Console command (you pick each part).",
+    "ConsoleAuto stays automatic."
+   ],
+   "dimensions": false
+  },
+  "1.88.11": {
+   "title": null,
+   "changes": [
+    "Exterior walls show a clean outline (no bevel or round-over lines).",
+    "No one-word last lines in CNC notes."
+   ],
+   "dimensions": false
+  },
+  "1.88.12": {
+   "title": null,
+   "changes": [
+    "Battens grouped with solid doors (Tabitha's Celine) are laid out as their own part: one horizontal batten with the total quantity."
+   ],
+   "dimensions": false
+  },
+  "1.88.13": {
+   "title": null,
+   "changes": [
+    "Fixed Rhino freezing while creating the dashed line style (my fix)."
+   ],
+   "dimensions": false
+  },
+  "1.88.14": {
+   "title": null,
+   "changes": [
+    "Tabitha's battens were also counted as legs and drawn twice; fixed."
+   ],
+   "dimensions": false
+  },
+  "1.88.15": {
+   "title": null,
+   "changes": [
+    "A new page layout that places whole groups and balances the sheets, instead of fixed page buckets.",
+    "Shorter drawer captions."
+   ],
+   "dimensions": false
+  },
+  "1.88.16": {
+   "title": null,
+   "changes": [
+    "Robin and Cortney no longer fail when the new layout can't fit something.",
+    "Scott's door captions no longer pile up."
+   ],
+   "dimensions": false
+  },
+  "1.88.17": {
+   "title": null,
+   "changes": [
+    "Drawer pages are compact again, as before fix23."
+   ],
+   "dimensions": false
+  },
+  "1.88.18": {
+   "title": "Friday's set (the one you liked)",
+   "changes": [
+    "Cortney's drawers are compact without failing.",
+    "The plugin never gives up on a console over layout preferences."
+   ],
+   "dimensions": false
+  },
+  "1.88.19": {
+   "title": null,
+   "changes": [
+    "Set a 9 pt minimum for dimension text (from the print test).",
+    "Cord-hole chains are drawn full size."
+   ],
+   "dimensions": true
+  },
+  "1.88.20": {
+   "title": null,
+   "changes": [
+    "Dimension text was held at a constant printed size whatever the drawing scale, which changed how all dimension text is drawn.",
+    "This is the approach you later rejected (\"don't change the font size\").",
+    "Also included eight of your corrections."
+   ],
+   "dimensions": true
+  },
+  "1.88.21": {
+   "title": null,
+   "changes": [
+    "Rows of parts line up on the panel tops instead of the dimension lines.",
+    "All interior chains are drawn on the panel."
+   ],
+   "dimensions": true
+  },
+  "1.88.22": {
+   "title": null,
+   "changes": [
+    "Fixed six consoles that failed in Rhino when crowded dimensions couldn't be placed."
+   ],
+   "dimensions": true
+  },
+  "1.88.23": {
+   "title": null,
+   "changes": [
+    "Added perm-shelf and interior-wall CNC layouts.",
+    "A dimension never sits on another dimension.",
+    "Long shelves get their own row."
+   ],
+   "dimensions": true
+  },
+  "1.88.24": {
+   "title": null,
+   "changes": [
+    "Inside chains sit beside their feature, not on the far edge.",
+    "Plus layout and machining setup corrections."
+   ],
+   "dimensions": true
+  },
+  "1.88.25": {
+   "title": null,
+   "changes": [
+    "Fixed most consoles failing in real Rhino."
+   ],
+   "dimensions": false
+  },
+  "1.88.26": {
+   "title": null,
+   "changes": [
+    "A long overnight round.",
+    "Dimension text was moved into \"lanes\" to avoid collisions.",
+    "Text and CNC labels were measured and re-placed.",
+    "Groups were reflowed before pages split.",
+    "You called this set a major step backwards."
+   ],
+   "dimensions": true
+  },
+  "1.88.27": {
+   "title": null,
+   "changes": [
+    "Small companion drawings combined.",
+    "Chain numbers kept beside their own spans."
+   ],
+   "dimensions": true
+  },
+  "1.88.28": {
+   "title": null,
+   "changes": [
+    "Removed the constant-printed-size text and went back to your model-space-scale dimensions.",
+    "Tabitha's pages arranged like Friday's.",
+    "Door and drawer sheets isolated.",
+    "No dashes between frame-door stiles and rails.",
+    "You rejected this one."
+   ],
+   "dimensions": true
+  },
+  "1.88.29": {
+   "title": "Friday's set + Naveen fixes",
+   "changes": [
+    "Built on 1.88.18 (Friday's set); none of the 1.88.19-1.88.28 dimension changes.",
+    "Damaged handle geometry (Naveen's right door pull) is drawn from a repaired copy; your model is not changed.",
+    "Record-well floor dimension is measured on the record-well drawing, so Naveen no longer fails.",
+    "A part that fails no longer stops the blueprint: it stays drawn with a red INCORRECT note, and the rest of the sheets are made."
+   ],
+   "dimensions": false
+  }
+ }
+}
