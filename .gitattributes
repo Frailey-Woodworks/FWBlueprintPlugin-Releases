@@ -1,3 +1,4 @@
 # Signatures cover the exact bytes. Git must never normalize release metadata.
 releases/** -text
 manager/** -text
+development/** -text
