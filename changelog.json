@@ -272,6 +272,13 @@
     "Sheet 1 holds the top, back and bottom panels whenever they fit on one page."
    ],
    "dimensions": true
+  },
+  "1.88.33": {
+   "title": "Sheet 1 always top, back, bottom",
+   "changes": [
+    "Top, back and bottom panels always share sheet 1, even on long consoles (Robin, Cortney) where their dimension text then prints smaller."
+   ],
+   "dimensions": true
   }
  }
 }
