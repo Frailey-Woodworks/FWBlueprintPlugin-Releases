@@ -3,13 +3,13 @@ root=pathlib.Path(__file__).resolve().parents[2]
 assert os.environ.get('GITHUB_ACTIONS')=='true' and os.environ.get('GITHUB_REPOSITORY')=='Frailey-Woodworks/FWBlueprintPlugin-Releases','Repository-scoped Actions publication only'
 repo='Frailey-Woodworks/FWBlueprintPlugin-Releases'
 changed=subprocess.check_output(['git','diff-tree','--root','--no-commit-id','--name-only','-r','HEAD'],text=True).splitlines()
-folders=sorted({root/pathlib.PurePosixPath(p).parent for p in changed if re.fullmatch(r'development/1\.88\.(?:[1-9]|1\d|2[0-8])/blueprint-release.json',p)})
+folders=sorted({root/pathlib.PurePosixPath(p).parent for p in changed if re.fullmatch(r'development/1\.88\.(?:[1-9]|[1-9]\d)/blueprint-release.json',p)})
 assert len(folders)==1,'Publish one explicitly selected development release per commit'
 for folder in folders:
     manifest=folder/'blueprint-release.json';signature=folder/'blueprint-release.sig';request=json.loads((folder/'publication.json').read_text())
     subprocess.run(['openssl','dgst','-sha256','-verify',str(root/'public-key.pem'),'-signature',str(signature),str(manifest)],check=True)
     m=json.loads(manifest.read_text());v=m['Version'];tag='v'+v
-    assert v==folder.name and re.fullmatch(r'1\.88\.(?:[1-9]|1\d|2[0-8])',v)
+    assert v==folder.name and re.fullmatch(r'1\.88\.(?:[1-9]|[1-9]\d)',v)
     assert m['Product']=='FWBlueprintPlugin' and m['PluginId']=='bcb8bf5e-b4ee-45f9-a3ea-bc54de4a7248'
     assert request['prerelease'] is True and request['make_latest']=='false' and request['version']==v
     assert request['title'].startswith('Blueprint '+v+' (dev) - ') and request['commit']==m['Commit']
