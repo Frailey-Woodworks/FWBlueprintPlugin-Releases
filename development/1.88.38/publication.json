@@ -1,0 +1,7 @@
+{
+  "version": "1.88.38",
+  "title": "Blueprint 1.88.38 (dev) - fix46 (lift-lid depth, dashes, build package)",
+  "commit": "2df9058bbcdb29b226f3197a0149754166807a7d",
+  "prerelease": true,
+  "make_latest": "false"
+}
