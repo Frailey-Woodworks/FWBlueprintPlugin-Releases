@@ -327,6 +327,13 @@
     "A bottom plate capped by the exterior walls now goes on before them."
    ],
    "dimensions": true
+  },
+  "1.88.39": {
+   "title": null,
+   "changes": [
+    "The red circle marking XY 0 on CNC layouts is now always 0.5\" in diameter, no matter the drawing's dimension scale."
+   ],
+   "dimensions": true
   }
  }
 }

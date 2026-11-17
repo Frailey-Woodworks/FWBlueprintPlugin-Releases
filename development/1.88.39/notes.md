@@ -1,0 +1,1 @@
+- The red circle marking XY 0 on CNC layouts is now always 0.5" in diameter, no matter the drawing's dimension scale.
