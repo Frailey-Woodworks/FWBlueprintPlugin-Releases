@@ -305,6 +305,14 @@
     "A part that fails to reach the drawings is listed as INCORRECT; the rest of the blueprint is still made."
    ],
    "dimensions": true
+  },
+  "1.88.37": {
+   "title": "version list simplified",
+   "changes": [
+    "The version list on the Updates tab now shows just the version and a short note (for example \"1.88.36   small dims 10\"); stable builds say \"Stable\".",
+    "Dimensions and drawings are unchanged from 1.88.36."
+   ],
+   "dimensions": true
   }
  }
 }
