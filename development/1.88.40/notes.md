@@ -1,0 +1,3 @@
+- New `Ghost` command: pick objects and they show ghosted (see-through gray with dark edges, your Home PC's Ghosted look) in every viewport. The look ships with the toolkit as "FW Ghosted", so it matches on every computer.
+- New `Unghost` command: only ghosted objects can be picked; it returns them to normal.
+- Build packages no longer group their parts, so any part can be moved or deleted on its own.
