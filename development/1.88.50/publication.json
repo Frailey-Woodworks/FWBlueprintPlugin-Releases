@@ -1,0 +1,7 @@
+{
+  "version": "1.88.50",
+  "title": "Blueprint 1.88.50 (dev) - Light bars removable; note overlap fix",
+  "commit": "d991623385f2e07c16690231254bd3a0014181a5",
+  "prerelease": true,
+  "make_latest": "false"
+}
