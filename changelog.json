@@ -412,6 +412,14 @@
     "Build package: red shaped-edge highlights show through the shaded part in Arctic, so an edge on the far side (a rear bevel) is still visible."
    ],
    "dimensions": false
+  },
+  "1.88.49": {
+   "title": null,
+   "changes": [
+    "Build package: no L glue-ups (R-NO-L-GLUEUP). Each part is glued along one face direction per step. A check reports any violation in the Build Package diagnostics.",
+    "The lift lid front plate is a removable. It goes on with the lift lid in the doors step, named \"Lift lid front plate\", and never joins the permanent shelf."
+   ],
+   "dimensions": false
   }
  }
 }
