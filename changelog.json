@@ -398,6 +398,13 @@
     "Edge profiles: each edge sheet ends with a one-line key (shaped edges are red; sections enlarged, dimensions true size)."
    ],
    "dimensions": true
+  },
+  "1.88.47": {
+   "title": null,
+   "changes": [
+    "Cut sheets: after a duplicate dimension is removed, the rows farther out in that stack slide in to close the empty lane."
+   ],
+   "dimensions": true
   }
  }
 }
