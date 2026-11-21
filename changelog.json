@@ -405,6 +405,13 @@
     "Cut sheets: after a duplicate dimension is removed, the rows farther out in that stack slide in to close the empty lane."
    ],
    "dimensions": true
+  },
+  "1.88.48": {
+   "title": null,
+   "changes": [
+    "Build package: red shaped-edge highlights show through the shaded part in Arctic, so an edge on the far side (a rear bevel) is still visible."
+   ],
+   "dimensions": false
   }
  }
 }
