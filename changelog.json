@@ -468,6 +468,13 @@
     "Door captions: a door member that is an open surface in the model (zero thickness) now reads \"surface, no thickness: check model\" instead of the impossible \"0\" stock\" (Shelley-Kathryn's lid front)."
    ],
    "dimensions": false
+  },
+  "1.88.55": {
+   "title": null,
+   "changes": [
+    "ConsoleAuto: each selected part that is an open surface (not a closed solid, so it has no thickness to cut) gets a WARNING on the command line and an \"Open surfaces\" entry in the run log naming the part to fix in the model. Shelley-Kathryn: the lid-front pieces. No other console is affected."
+   ],
+   "dimensions": false
   }
  }
 }
