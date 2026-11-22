@@ -475,6 +475,14 @@
     "ConsoleAuto: each selected part that is an open surface (not a closed solid, so it has no thickness to cut) gets a WARNING on the command line and an \"Open surfaces\" entry in the run log naming the part to fix in the model. Shelley-Kathryn: the lid-front pieces. No other console is affected."
    ],
    "dimensions": false
+  },
+  "1.88.56": {
+   "title": null,
+   "changes": [
+    "ConsoleAuto: parts modeled more than 1/64\" off the 1/16\" grid are listed in the run log (\"Off-grid sizes\"), with a one-line NOTE on the command line, because the sheets round them. Legs, hardware, brass, mesh and CNC-contoured wooden handles are skipped. Nothing changes on paper.",
+    "Wine rack build pages: identical racks are compared with the same planar-boundary proof the rack cut sheets use (latent; no current console has two racks)."
+   ],
+   "dimensions": false
   }
  }
 }
