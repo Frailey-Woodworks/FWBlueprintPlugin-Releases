@@ -505,6 +505,13 @@
     "Handle CNC sheets: handles turned end-for-end (left and right swing-door pulls) with the same measured profile (length, stock, crown, door contact) and the same CNC programs now share one drawing with \"Qty: 2\". Adam Wine printed the same 11-line CNC block twice; it now prints once. Handles that differ (Adam Record, Standard Admiral) stay separate."
    ],
    "dimensions": false
+  },
+  "1.88.60": {
+   "title": null,
+   "changes": [
+    "Edge-profile sheets: exterior-wall parts that belong to a side assembly use the cut sheet's own names, \"Ext Walls (Inside Panel)\" and \"Ext Wall Leg Caps\", when every part in the block shares that name. Scott's edge sheet had two blocks both captioned \"Ext Walls - edge profiles\"; they now read differently. Mixed blocks keep the general name."
+   ],
+   "dimensions": false
   }
  }
 }
