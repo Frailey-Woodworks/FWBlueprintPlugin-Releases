@@ -1,0 +1,7 @@
+{
+  "version": "1.88.59",
+  "title": "Blueprint 1.88.59 (dev) - identical handles share one CNC drawing",
+  "commit": "d4e0ea4373adcda247c10156a9d4c048c2f50ac6",
+  "prerelease": true,
+  "make_latest": "false"
+}
