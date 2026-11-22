@@ -491,6 +491,13 @@
     "Glue check: the one-direction rule now also runs inside wine rack and drawer-box steps (compared by role; floating drawer bottoms excluded), so an L inside a sub-assembly is caught automatically. Unit test with an all-at-once rack as the positive control."
    ],
    "dimensions": false
+  },
+  "1.88.58": {
+   "title": null,
+   "changes": [
+    "Record well cut sheet: a floor shorter than the walls gets its own length dimension, drawn inside the floor strip so it can't be read as a wall length. Shelley-Kathryn's 13\" floor on 15 1/2\" walls was printed nowhere before; it was found by the new printed-size coverage check. Consoles whose floor runs the full wall length are unchanged."
+   ],
+   "dimensions": true
   }
  }
 }
