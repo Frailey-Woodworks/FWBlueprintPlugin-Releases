@@ -520,6 +520,14 @@
     "Internal: the off-grid note uses a neutral metal-material check (no output change), so each away-run change can be kept or rejected on its own."
    ],
    "dimensions": false
+  },
+  "1.88.62": {
+   "title": "Ghost and Unghost respect groups",
+   "changes": [
+    "Unghost: picking one ghosted object in a group now unghosts the whole group, the same as a normal Rhino click selects a group. Before, Unghost picked single objects and bypassed groups. In a group where only some members are ghosted, the ghosted members are unghosted and the rest are left alone.",
+    "Ghost: picking inside the command also selects the whole group (pre-selected objects were already group-aware through Rhino's normal click)."
+   ],
+   "dimensions": false
   }
  }
 }
