@@ -1,0 +1,1 @@
+FW Toolkit panel icon: the panel tab now shows an FW monogram in the Frailey Woodworks green and cream instead of the generic Windows application icon. The same icon is used in Rhino's Plug-in Manager. No drawing, cut-list or build-package output changes.

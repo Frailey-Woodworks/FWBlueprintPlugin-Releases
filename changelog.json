@@ -566,6 +566,11 @@
     "Door sheets: the member-width (rail/stile width) dimension is removed from all frame-door layouts, and its Dev switch (R-DOOR-RAIL-WIDTH-DIM) is gone."
    ],
    "dimensions": true
+  },
+  "1.88.67": {
+   "title": null,
+   "changes": [],
+   "dimensions": false
   }
  }
 }
