@@ -549,6 +549,15 @@
     "Unchanged and still insert-specific: the solid-panel note, the solid-panel CNC guide outlines, and the mesh/louvre CNC files and slats."
    ],
    "dimensions": false
+  },
+  "1.88.65": {
+   "title": "Priority-ranked cut sheet grouping",
+   "changes": [
+    "Cut sheets: panel drawings are grouped by ranked rules instead of fixed buckets.",
+    "On the 12 test consoles: no islands remain, split families drop on 9, the smallest casework text gets bigger on every console, and 9 consoles gain one cut sheet. Part sizes and quantities are unchanged.",
+    "Dev switch R-SHEET-PRIORITY: OFF restores the 1.88.64 grouping."
+   ],
+   "dimensions": false
   }
  }
 }
