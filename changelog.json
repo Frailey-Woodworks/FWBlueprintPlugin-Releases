@@ -540,6 +540,15 @@
     "Stile-and-rail doors whose two rails differ in length get a warning instead of stopping the run."
    ],
    "dimensions": true
+  },
+  "1.88.64": {
+   "title": "Joint layout on every frame door; exact joint icons",
+   "changes": [
+    "Door sheets: the joint-based layout now applies to every frame door, whatever its insert (mesh, louvered, louvered + mesh, solid panel).",
+    "Door sheets: the joint icons are now exact copies of the owner's drawings (rail behind the stile), placed and scaled as on his sample sheets.",
+    "Unchanged and still insert-specific: the solid-panel note, the solid-panel CNC guide outlines, and the mesh/louvre CNC files and slats."
+   ],
+   "dimensions": false
   }
  }
 }
