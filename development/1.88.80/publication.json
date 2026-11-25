@@ -1,0 +1,7 @@
+{
+  "version": "1.88.80",
+  "title": "Blueprint 1.88.80 (dev) - Batch: build pages, edge details, cut sheets, Cutlist",
+  "commit": "64e3f0ef18b3315146c45caf5942454f7e9c1b0c",
+  "prerelease": true,
+  "make_latest": "false"
+}
