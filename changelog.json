@@ -627,6 +627,18 @@
     "Includes everything in 1.88.71 (goal-blueprint build package rules)."
    ],
    "dimensions": false
+  },
+  "1.88.73": {
+   "title": null,
+   "changes": [
+    "16 build pages in the goal's order; cut list unchanged (edge-profile sheet removed).",
+    "Notes are real leaders placed beside their target with short arrows, inside the page, one printed text size on every page (same as the dimension text).",
+    "Pages sized from the model with even margins; sub-assembly pages share one size.",
+    "One \"Edge details\" page per part with two or more profile kinds (front and side sections, labels, summary); simple profiles get a leader where the part is built.",
+    "Flush walls/tops get no centring note; doors with the same set-back share one note with an arrow per door.",
+    "Includes the side-pick hiding fix from 1.88.72."
+   ],
+   "dimensions": true
   }
  }
 }
