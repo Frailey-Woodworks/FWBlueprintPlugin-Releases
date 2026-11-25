@@ -603,6 +603,22 @@
     "Build-package group keeping (1.88.69) verified in hidden Rhino on the Jennifer copy: 12 console groups kept on their pages, all other parts loose."
    ],
    "dimensions": false
+  },
+  "1.88.71": {
+   "title": null,
+   "changes": [
+    "**R-BUILD-ALL-BLACK** — no grey earlier parts on any build page.",
+    "**R-BUILD-SUBASSEMBLY-TITLES** — no titles on main steps; sub-assembly pages keep a plain title.",
+    "**R-BUILD-NO-DOOR-PREP** — door-preparation pages left out for now.",
+    "**R-BUILD-SUBASSEMBLY-NEXT** — sub-assembly pages sit right before the step that installs them; redundant side-fit pages dropped for mirrored sides.",
+    "**R-BUILD-JOINED-ONLY** — a step shows only the parts that actually touch there; \"flush on back edge\" note and shelf size dims.",
+    "**R-BUILD-DIM-NEAR-PART** — front-view dims sit beside the part they measure.",
+    "**R-EDGE-ON-BUILD** — no edge-profile sheet in the cut list; profile leaders on the step that adds each part, and an \"Edge details\" page for parts with several profiles.",
+    "**R-BUILD-CENTRED-NOTES** — centred walls/top get a centring note with measured overhang dims.",
+    "**R-BUILD-SETBACK-BOTTOM** — door set-back note measured from the bottom edge.",
+    "**R-BUILD-PAGE-MARGINS** — at least 1/6 of the page as margin on every side."
+   ],
+   "dimensions": false
   }
  }
 }
