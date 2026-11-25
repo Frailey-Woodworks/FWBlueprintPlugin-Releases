@@ -1,0 +1,7 @@
+{
+  "version": "1.88.70",
+  "title": "Blueprint 1.88.70 (dev) - ChamferAngle fix for Rhino boxes",
+  "commit": "93d86208ebc1f450875b00b458f1f73cf5a12df4",
+  "prerelease": true,
+  "make_latest": "false"
+}
