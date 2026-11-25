@@ -681,6 +681,15 @@
     "Dim3D: type a number at \"Dimension line location\" to lock the offset distance."
    ],
    "dimensions": true
+  },
+  "1.88.77": {
+   "title": null,
+   "changes": [
+    "Missing optional columns (Phone, Email, Destination, Special Notes, Estimated Weight, Hardware List) are left blank, with a note instead of stopping the command.",
+    "A missing required column (#, Client, Project Type, Wood Type) names itself in the error.",
+    "Only the needed columns are read, never the financial ones."
+   ],
+   "dimensions": false
   }
  }
 }
