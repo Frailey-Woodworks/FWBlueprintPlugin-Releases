@@ -619,6 +619,14 @@
     "**R-BUILD-PAGE-MARGINS** — at least 1/6 of the page as margin on every side."
    ],
    "dimensions": false
+  },
+  "1.88.72": {
+   "title": null,
+   "changes": [
+    "**R-SIDE-PICK-HIDE** (Dev tab switch): in Console / ConsoleAuto, when the exterior walls are made of several parts and you are asked for the LEFT / RIGHT SIDE ASSEMBLY MEMBERSHIP, the parts you already selected (top, back, bottom...) stay hidden. Only the walls and still-unselected parts show. OFF: everything is shown again, as in 1.88.71.",
+    "Includes everything in 1.88.71 (goal-blueprint build package rules)."
+   ],
+   "dimensions": false
   }
  }
 }
